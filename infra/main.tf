@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_security_group" "sre_lab" {
-  name        = "${var.project}-sg"
+  name        = "${var.project}-sg-v2"
   description = "Allow SSH, HTTP, Grafana, Prometheus"
 
   ingress {
